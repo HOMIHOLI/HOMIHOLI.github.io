@@ -19,3 +19,5 @@ HTML, CSS, JavaScript, Jekyll을 배우며
 <script src="/assets/js/hello.js"></script>
 
 <script src="/assets/js/count-char.js"></script>
+
+<script src="/assets/js/freq.js"></script>
