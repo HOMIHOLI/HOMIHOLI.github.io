@@ -19,8 +19,15 @@ function classifyEra(year) {
 const works = ["날개", "오감도", "지주회시", "종생기", "권태"];
 
 console.log(works.length);
-console.log(works);
+console.log(works[0]);
 console.log(works[works.length - 1]);
 
 const titled = works.map(work => `「${work}」`);
 console.log(titled);
+
+const long = works.filter(work => work.length >= 3);
+console.log(long);
+
+for (let i = 0; i < long.length; i++) {
+  console.log(`${i + 1}번째 작품: ${long[i]}`);
+}
