@@ -14,3 +14,13 @@ function classifyEra(year) {
   }
 }
 
+
+// Q2 배열과 배열 메서드
+const works = ["날개", "오감도", "지주회시", "종생기", "권태"];
+
+console.log(works.length);
+console.log(works);
+console.log(works[works.length - 1]);
+
+const titled = works.map(work => `「${work}」`);
+console.log(titled);
