@@ -10,7 +10,7 @@ function classifyEra(year) {
   } else if (year < 1990) {
     return "해방 이후–현대";
   } else {
-    return
+    return "동시대";
   }
 }
 
