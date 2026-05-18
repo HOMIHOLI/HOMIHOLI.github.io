@@ -1,4 +1,5 @@
 // assets/js/works-app.js
+
 function countChar(text, target) {
     let count = 0;
     for (const ch of text) {
@@ -8,6 +9,11 @@ function countChar(text, target) {
 }
 
 const targets = ["이", "의", "는", "가", "을"];
+
+const btnBox = document.querySelector("#work-buttons");
+const nowBox = document.querySelector("#now-showing");
+const list = document.querySelector("#freq-list");
+const topBox = document.querySelector("#top-char");
 
 fetch("/data/works.json")
     .then(response => response.json())
