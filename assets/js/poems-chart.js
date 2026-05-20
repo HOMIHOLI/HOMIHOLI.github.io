@@ -44,7 +44,7 @@ function drawChart(rows) {
             },
             scales: {
                 y: { beginAtZero: true, title: { display: true, text: "편수" } },
-                x: { title: { display: true, text: "작가" } },
+                x: {                    title: { display: true, text: "작가" } },
             },
         },
     });
