@@ -1,5 +1,5 @@
 // [숙제13] 텍스트 분석 도구 구현
-// 0000-00000 김인문
+// 2022-17796 이호윤
 
 // --- 함수 정의들 (21강 코드 재사용) ---
 function extractBody(text) {
@@ -80,7 +80,7 @@ Promise.all([
     fetch("/data/dracula.txt").then(r => r.text()),
     fetch("/data/stopwords-en.txt").then(r => r.text()),
 ]).then(([frankText, dracText, stopText]) => {
-    const stopwords = stopwordsText.split(/\s+/).filter(w => w.length > 0);
+    const stopwords = stopText.split(/\s+/).filter(w => w.length > 0);
     const frankTop = analyze(frankText, stopwords);
     const dracTop = analyze(dracText, stopwords);
     drawChart("#chart-frankenstein", frankTop, "rgba(40, 167, 69, 0.6)");
