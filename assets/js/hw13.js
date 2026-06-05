@@ -50,8 +50,6 @@ function analyze(text, stopwords) {
     const counts = countWords(cleaned);
     return topN(counts, 30);
 }
-const frankTop = analyze(frankText, stopwords);
-const dracTop = analyze(dracText, stopwords);
 
 
 function drawChart(selector, top, color) {
